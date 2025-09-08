@@ -11,3 +11,21 @@
 # Voer hierna de functie uit met verschillende inputs en bekijk de resultaten.
 # Let op: Het is verplicht om een functie te gebruiken!
 
+def rekenmachine(getal1, getal2, operatie):
+    if operatie == "plus":
+        return getal1 + getal2
+    elif operatie == "min":
+        return getal1 - getal2
+    elif operatie == "keer":
+        return getal1 * getal2
+    elif operatie == "delen":
+        return getal1 / getal2 if getal2 != 0 else "Kan niet delen door nul"
+    else:
+        return "Ongeldige operatie"
+
+print(rekenmachine(10, 5, "plus"))   
+print(rekenmachine(10, 5, "min"))    
+print(rekenmachine(10, 5, "keer"))   
+print(rekenmachine(10, 5, "delen"))
+print(rekenmachine(10, 0, "delen"))   
+print(rekenmachine(10, 5, "onbekend")) 
